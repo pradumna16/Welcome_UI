@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logmein">
+
+    <TextView
+        android:id="@+id/textViewid1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ShadowFox"
+        android:textSize="45sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/apptext"
+        android:gravity="center"
+        android:layout_marginTop="45sp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewid1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fox"/>
+
+    <LinearLayout
+        android:id="@+id/loginBox"
+        android:layout_width="match_parent"
+        android:layout_height="409dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:text="Welcome Back ShadowUser!!"
+            android:gravity="center"
+            android:textSize="34sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textStyle="bold"
+            android:textColor="#696969"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="#80A9A9A9"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/usernameid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Username"
+                android:textSize="20dp"
+                android:textColorHint="#7FFFD4"
+                android:textStyle="bold"
+                android:textColor="#2F4F4F"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="#80A9A9A9"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/passwdid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password Here"
+                android:textSize="20dp"
+                android:textColorHint="#7FFFD4"
+                android:textStyle="bold"
+                android:textColor="#2F4F4F"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/forgetid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can't rememner Password or Username?"
+        android:textSize="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="end"
+        android:textStyle="bold"
+        android:textColor="#7FFFD4"/>
+
+        <Button
+            android:id="@+id/logButton"
+            android:layout_width="350dp"
+            android:background="#80A9A9A9"
+            android:layout_height="70dp"
+            android:text="Log In"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/separateline"
+        android:layout_width="300dp"
+        android:layout_height="6dp"
+        android:layout_below="@+id/loginBox"
+        android:layout_marginTop="15dp"
+        android:background="#907FFFD4"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/loginmethod2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or Login With:"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:layout_below="@+id/separateline"
+       android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#7FFFD4"/>
+
+    <ImageView
+        android:id="@+id/facebookid"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/loginmethod2"
+        android:layout_marginLeft="240sp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_facebook"/>
+    <ImageView
+        android:id="@+id/googleid"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/loginmethod2"
+        android:layout_marginLeft="130sp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_google_plus"/>
+
+
+</RelativeLayout>
